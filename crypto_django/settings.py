@@ -89,14 +89,14 @@ DATABASES = {
         'NAME': 'crypto',
         'USER': 'cryptouser',
         'PASSWORD': 'crypto',
-        'HOST': 'localhost',
-        'PORT': 5432,
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
-        'PGCRYPTO_KEY': 'mleko321',
-        'PUBLIC_PGP_KEY': open(PUBLIC_PGP_KEY_PATH, 'r').read(),
-        'PRIVATE_PGP_KEY': open(PRIVATE_PGP_KEY_PATH, 'r').read(),
+        'HOST': 'postgres',
+        'PORT': "5432",
+        # 'OPTIONS': {
+        #     'sslmode': 'require',
+        # },
+        # 'PGCRYPTO_KEY': 'mleko321',
+        # 'PUBLIC_PGP_KEY': open(PUBLIC_PGP_KEY_PATH, 'r').read(),
+        # 'PRIVATE_PGP_KEY': open(PRIVATE_PGP_KEY_PATH, 'r').read(),
     }
 }
 
