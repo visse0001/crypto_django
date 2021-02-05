@@ -4,9 +4,9 @@ services:
   postgres:
     image: postgres
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=postgres
+      - POSTGRES_USER=cryptouser
+      - POSTGRES_PASSWORD=crypto
+      - POSTGRES_DB=crypto
     volumes:
       - .:/postgres_data/
   web:
