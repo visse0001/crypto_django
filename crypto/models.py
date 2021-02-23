@@ -3,14 +3,11 @@ from django.db import models
 from pgcrypto import fields
 
 
-class MyModel(models.Model):
-    hostname = fields.TextDigestField()
-
-
 class Producer(models.Model):
-    name = fields.TextPGPPublicKeyField()
-    email = fields.EmailPGPSymmetricKeyField()
+    name = models.CharField(max_length=128)
 
 
-class Default(models.Model):
-    name = models.TextField()
+class ProducerSymmetric(models.Model):
+    name = fields.CharPGPSymmetricKeyField()
+    description = fields.CharPGPSymmetricKeyField()
+    credentials = fields.CharPGPSymmetricKeyField()

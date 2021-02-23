@@ -94,7 +94,7 @@ DATABASES = {
         'OPTIONS': {
             'sslmode': 'require',
         },
-        'PGCRYPTO_KEY': 'mleko321',
+        'PGCRYPTO_KEY': PGCRYPTO_KEY,
         'PUBLIC_PGP_KEY': open(PUBLIC_PGP_KEY_PATH, 'r').read(),
         'PRIVATE_PGP_KEY': open(PRIVATE_PGP_KEY_PATH, 'r').read(),
     }
