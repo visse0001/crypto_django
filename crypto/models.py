@@ -8,6 +8,6 @@ class Producer(models.Model):
 
 
 class ProducerSymmetric(models.Model):
-    name = fields.CharPGPSymmetricKeyField()
-    description = fields.CharPGPSymmetricKeyField()
-    credentials = fields.CharPGPSymmetricKeyField()
+    name = fields.CharPGPSymmetricKeyField(max_length=512)
+    description = fields.CharPGPSymmetricKeyField(max_length=512)
+    credentials = fields.CharPGPSymmetricKeyField(max_length=512)

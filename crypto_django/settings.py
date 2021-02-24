@@ -22,13 +22,13 @@ PUBLIC_PGP_KEY = open(PUBLIC_PGP_KEY_PATH).read()
 PRIVATE_PGP_KEY = open(PRIVATE_PGP_KEY_PATH).read()
 
 # Used by TextHMACField and PGPSymmetricKeyField if not specified by the db
-PGCRYPTO_KEY = 'ultrasecret'
+PGCRYPTO_KEY = 'mleko321'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'rvic2=)x^f7(31kq1us!6tfli#9^)8o^4#@4tj(zq!rejij8j3'
+SECRET_KEY = 'mleko321'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -89,14 +89,15 @@ DATABASES = {
         'NAME': 'crypto',
         'USER': 'cryptouser',
         'PASSWORD': 'crypto',
-        'HOST': 'postgres',
+        'HOST': 'localhost',
+        # 'HOST': 'postgres',
         'PORT': "5432",
-        # 'OPTIONS': {
-        #     'sslmode': 'require',
-        # },
-        # 'PGCRYPTO_KEY': 'mleko321',
-        # 'PUBLIC_PGP_KEY': open(PUBLIC_PGP_KEY_PATH, 'r').read(),
-        # 'PRIVATE_PGP_KEY': open(PRIVATE_PGP_KEY_PATH, 'r').read(),
+    #     'OPTIONS': {
+    #         'sslmode': 'require',
+    #     },
+    #     'PGCRYPTO_KEY': PGCRYPTO_KEY,
+    #     'PUBLIC_PGP_KEY': open(PUBLIC_PGP_KEY_PATH, 'r').read(),
+    #     'PRIVATE_PGP_KEY': open(PRIVATE_PGP_KEY_PATH, 'r').read(),
     }
 }
 
